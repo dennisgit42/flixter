@@ -1,1 +1,14 @@
  @import "bootstrap";
+
+ body{
+  background: image_url("sayagata-400px.png")
+ }
+
+ .navbar{
+  box-shadow: 4px 4px 10px 2px #8e7d7d;
+ }
+
+ .navbar-inverse .navbar-brand{
+  font-family: "2-Questa_Regular", sans-serif;
+  font-size: 30px;
+ }
