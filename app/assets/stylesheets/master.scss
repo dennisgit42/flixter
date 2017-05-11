@@ -14,6 +14,29 @@
   font-size: 30px;
  }
 
+ .navbar-nav{
+  margin-left: auto;
+ }
+
+ .navbar-inverse .navbar-nav .nav-link{
+  color: white;
+ }
+
+ .booyah-box{
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  margin-top: 15px;
+  padding: 20px;
+ }
+
+ .booyah-box h2, booyah-box h1{
+  margin: 10px;
+ }
+
  .hero {
   background: image_url("hero.jpg");
   color: white;
