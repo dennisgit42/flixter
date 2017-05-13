@@ -1,21 +1,22 @@
 <br />
 
-<div class="booyah-box col-10 offset-1">
+<div class="booyah-box col-10 offset-1">  
   <h1 class="text-center">Learn something today</h1>
   <hr />
 
   <% @courses.each do |course| %>
-    <h2 class="text-center"><%= course.title %></h2>
+    <h2 class="text-center">
+      <%= link_to course.title, course_path(course) %>      
+    </h2>
     <br />
     <div class="row">
       <div class="col-sm-8 col-12">
         <%= course.description %>
       </div>
       <div class="col-sm-4 col-12 text-center">
-        <%= link_to "Learn More", "#", class: "btn btn-primary btn-lg" %>
+        <%= link_to "More Details...", course_path(course), class: "btn btn-primary btn-lg" %>
       </div>
     </div>  
     <br class="clr" />
   <% end %>
-
 </div>
