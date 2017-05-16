@@ -13,5 +13,6 @@ Rails.application.routes.draw do
   end
 
   resources :courses, only: [:index, :show]
+  resources :lessons, only: [:show]
 
 end
