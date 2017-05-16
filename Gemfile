@@ -76,3 +76,6 @@ gem "fog-aws"
 
 # adding mini-magick gem to allow image manipulation
 gem "mini_magick"
+
+# adding carrierwave-aws gem and using that instead of fog to upload videos to Amazon S3, avoids video errors coming from fog"
+gem "carrierwave-aws"

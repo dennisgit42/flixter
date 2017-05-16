@@ -5,7 +5,7 @@
     <%= simple_form_for @lesson, url: instructor_section_lessons_path(current_section) do |f| %>
       <%= f.input :title %>
       <%= f.input :subtitle %>
-      <br />
+      <%= f.input :video, label: "Please upload a lecture video for this course:" %>
       <%= f.submit "Create new lesson" %>
       <br /><br />
     <% end %>
