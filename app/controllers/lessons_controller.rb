@@ -13,15 +13,10 @@ class LessonsController < ApplicationController
   end
 
   def user_enrolled?
-    user_enrolled = false;
-    current_lesson.section.course.enrollments.each do |enrollment|
-      if enrollment.user == current_user
-        user_enrolled = true
-      end
-    end
-    if user_enrolled == false
-      current_course = current_lesson.section.course
-      redirect_to course_path(current_course), alert: "You must be enrolled in this course before you can view the lesson."
+    current_course = current_lesson.section.course
+    enrolled = Enrollment.find_by(user: current_user, course: current_course)
+    if enrolled.nil?
+      redirect_to course_path(current_course), alert: "You must be enrolled in the course before viewing its lessons."
     end
   end
 
