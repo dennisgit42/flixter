@@ -79,3 +79,6 @@ gem "mini_magick"
 
 # adding carrierwave-aws gem and using that instead of fog to upload videos to Amazon S3, avoids video errors coming from fog"
 gem "carrierwave-aws"
+
+# adding stripe gem to process credit card payments
+gem "stripe"
