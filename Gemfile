@@ -82,3 +82,6 @@ gem "carrierwave-aws"
 
 # adding stripe gem to process credit card payments
 gem "stripe"
+
+# Adding ranked-model gem to allow user to reorder lessons list on course page
+gem "ranked-model"
