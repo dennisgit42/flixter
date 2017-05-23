@@ -85,3 +85,6 @@ gem "stripe"
 
 # Adding ranked-model gem to allow user to reorder lessons list on course page
 gem "ranked-model"
+
+# adding j-query-ui-rails gem to allow use of Sortable interaction to re-order lesson links
+gem 'jquery-ui-rails'
