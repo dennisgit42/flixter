@@ -3,7 +3,7 @@ class Section < ApplicationRecord
   has_many :lessons
 
   include RankedModel
-  ranks: :row_order, :with_same :course_id
+  ranks :row_order, with_same: :course_id
 
 
 end

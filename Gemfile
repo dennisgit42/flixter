@@ -88,3 +88,6 @@ gem "ranked-model"
 
 # adding j-query-ui-rails gem to allow use of Sortable interaction to re-order lesson links
 gem 'jquery-ui-rails'
+
+#font-awesome rails gem for adding icons to application
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
