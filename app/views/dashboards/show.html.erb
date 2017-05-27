@@ -24,7 +24,7 @@
 
   <br /><br />
 
-  <h1>What I'm teaching</h1>
+  <h1>What I'm Teaching</h1>
   <% current_user.courses.each do |course| %>
     <h3 class="text-center">
       <%= link_to course.title, course_path(course) %>
