@@ -1,7 +1,6 @@
 class Instructor::CoursesController < ApplicationController
   before_action :authenticate_user!
   before_action :require_authorized_for_current_course, only: [:show]
-  skip_before_action :verify_authenticity_token
   
   def new
     @course = Course.new
